@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body{
+  background-image: url(./images/background.jpg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.notes{
+  height: 90vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 28px;
+  font-family: 'Lobster Two';
+  height: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.row.row-content{
+  border: 1px solid blue;
+  justify-content: center;
+  background-color: rgb(255, 173, 51);
+  height: 80%;
+  box-shadow:  1rem 1rem 2rem rgba(0,0,0,.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion .accordion-item .title ,
+.accordion .accordion-item.active .title,
+.accordion {
+  background-color : rgb(255, 173, 51);
+  border: none;
+}
+
+.note{
+  border: 1px solid black;
+  box-shadow:  1rem 1rem 1rem rgba(0,0,0,.1);
+  margin-top: 10px;
+}
+
+.fa.fa-plus-circle{
+  background-color:none;
+  font-size : 30px;
+  color: black;
+}
+.add-notes:hover{
+  background-color: white;
+  border: none;
+}
+.add-notes{
+  width: 50px;
+  height: 50px;
+  border:none;
+  border-radius: 55%;
 }
